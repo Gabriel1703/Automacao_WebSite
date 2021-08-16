@@ -2,7 +2,7 @@
 Documentation           Ações da página de home logada
 
 ***Variables***
-${LOGOUT_LINK}     css=a[href$=sign_out]     
+${LOGOUT_LINK}     css=a[href*=logout]   
 
 
 ***Keywords***

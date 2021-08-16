@@ -6,15 +6,21 @@ Documentation           Ações da página de login
 Open Login Page
 
     New Browser         ${browser}     ${false}
-    New Page            http://parodify.herokuapp.com/users/sign_in 
+    New Page            http://inm-test-app.herokuapp.com/accounts/login/ 
 
 Login With
-    [Arguments]         ${email_arg}    ${pass_arg}    
+    [Arguments]         ${name_arg}    ${password_arg}    
     
-    Fill Text           css=input[name*=email]  ${email_arg}
-    Fill Text           css=#user_password      ${pass_arg}
+    Fill Text           css=input[name*=username]  ${name_arg}
+    Fill Text           css=input[name*=pass]      ${password_arg}
 
-    Click               css=input[value="Log in"]  
+    Click               xpath=//button[@class="login100-form-btn"]/.. 
+
+Cadastre_se With
+    [Arguments]         ${name_arg}     ${password_arg}   ${confirmpass_arg}
+
+    Fill Text           css=input[name*=username]  ${name_arg}
+    Fill Text           css=input[name*=pass]      ${password_arg}
 
 Alert Should Be         
     [Arguments]         ${expect_arg}
