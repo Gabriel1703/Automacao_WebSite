@@ -1,5 +1,5 @@
 ***Settings***
-Documentation   Ações de navegação no parodify
+Documentation   Ações de navegação 
 
 **Keywords***
 Go To Search Page

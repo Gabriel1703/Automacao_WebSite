@@ -10,5 +10,7 @@ Test Teardown   Take Screenshot
 Login com sucesso
     [tags]              smoke
     Open Login Page
-    Login With          Rogerio Céni     Rogerio#Ceni 
+    Login With        ${INPUT_USERNAME}     ${INPUT_PASSWORD}
     Logout Link Should Be visible
+
+

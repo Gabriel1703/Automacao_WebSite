@@ -2,13 +2,11 @@
 Documentation       Arquivo base para o projeto de automação
 
 Library     Browser
+Library     FakerLibrary       locale=pt_BR
 
 # Page Object + Actions
-# Resource    pages/album.robot
-# Resource    pages/categoria.robot
 Resource    pages/home_logada.robot
 Resource    pages/login.robot
-# Resource    pages/search.robot
 
 #App Actions
 # Resource    actions/auth.robot
